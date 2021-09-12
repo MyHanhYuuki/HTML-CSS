@@ -1,5 +1,5 @@
 :root {
-    --text-color:#770877;
+    --text-color:rgb(16, 146, 221);
     }
     
     h1 {
@@ -15,4 +15,16 @@
 
     }
 
+    h4 {
+        color: var(--text-color);
+    }
+
+    h5 {
+        color: var(--text-color);
+    }
+
+    h6 {
+        color: var(--text-color);
+    }
     /* Đặt biến trong CSS */
+    /* lớp giả :root để dùng khi chỉ cần thay đổi 1 chỗ tất cả sẽ thay đổi theo.  */

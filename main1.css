@@ -1,0 +1,30 @@
+.heading{
+    color: rgb(231, 209, 12);
+    font-size: 20 px;
+    font-style: italic;
+}
+/* CSS ID */
+ #fist-heading { 
+    color: rgb(255, 0, 0); 
+    font-size: 20px;
+}
+.second-heading{
+    color: rgb(22, 96, 99);
+    font-size: 25px;
+}
+
+/* CSS tất cả file html */
+/* html {
+    color: rgb(47, 0, 255);
+    } */
+
+
+    /* CSS tắt cả */
+    /* *{
+        color: rgb(255, 0, 0);
+    } */
+
+    /* h1 {
+color: crimson !important;  */
+/* là quan trọng nhất */
+    
