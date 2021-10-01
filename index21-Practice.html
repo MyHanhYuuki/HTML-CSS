@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+
+<head>
 <meta charset ="utf-8">
 <title> Myhanh </title>
 <link rel="stylesheet" href="main21.css">
@@ -11,19 +12,56 @@
     
 <body>
     <!-- Navbar -->
-     <div class="nav">
-            <!-- Flex container -->
-            <ul class="nav-list">
-                <!-- 2 thẻ <ul>: flex item, thẻ <li> chỉ là flex item khi thẻ gần nhất chứa nó là flex container  -->
-                <li class="nav-item">Giới thiệu</li>
-                <li class="nav-item">Kết nối</li>
-                <li class="nav-item">Tải ứng dụng</li>
-            </ul>
-            <ul class="nav-list">
-                <li class="nav-item">Đăng ký</li>
-                <li class="nav-item">Đăng nhập</li>
-            </ul>
+    <!-- Flex container -->
+    <div class="nav">
+    <ul class="nav-list">
+        <li class="nav-item"> HOME</li>
+        <li class="nav-item"> DOWLOAD</li>
+        <li class="nav-item"> SOCIAL</li>
+        <li class="nav-item"> ABOUT</li>
+        <li class="nav-item"> CONTACT US</li>
+    </ul>
+ <!-- 2 thẻ <ul>: flex item, thẻ <li> chỉ là flex item khi thẻ gần nhất chứa nó là flex container  -->
+    <ul class="nav-list">
+        <li class="nav-item">SIGN IN</li>
+        <li class="nav-item">SIGN OUT</li>
+    </ul>
+<div>
+
+<!-- Form layout -->
+<div class="form-container">
+<form action="" class="form">
+<div class="form__row">
+    <label class="form__label" for="name">NAME:</label>
+    <input class="form__input" type="text" id="name">
+</div>
+ <div>
+    <label class="form__label" for="password">PASSWORD:</label>
+    <input class="form__input" type="password" id="password">
+</div> 
+</form>
+</div>
+
+<!-- Column layout -->  
+<div class="column-layout">
+    <div class="column-item sidebar-one">
+        <h2>Sidebar one</h2>
+        <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time, I would like to apply today as a Sample position in permanent employment.</p>
     </div>
+    <div class="column-item main-column">
+        <h2>Main column</h2>
+        <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time, I would like to apply today as a Sample position in permanent employment.</p>
+        <p>At the moment I'm working as a Sample position at Sample company.My most important tasks include familiarizing myself with new products, conducting sales talks and transferring orders.</p>
+        <p>Your job list sounds great! I hope that this will enable me to develop personal and professional development opportunities.I like your focus and image in this industry very well, so I see you as a very interesting employer.I have been following your development for a long time in the media and therefore believe that I also fit in well with the company.</p>
+    </div>
+    <div class="column-item sidebar-two">
+        <h2>Sidebar two</h2>
+        <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time, I would like to apply today as a Sample position in permanent employment.</p>
+    </div>
+</div>
+
+<!--  lam tiep phan colum layout -->
+
 </body>
 
  </html>
