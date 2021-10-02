@@ -1,4 +1,4 @@
-<!-- flexbox - Thực hành tương tự index21.html -->
+<!-- flexbox - Practice-like-index21.html -->
 
 <!DOCTYPE html>
 
@@ -11,23 +11,22 @@
 </head>
     
 <body>
-    <!-- Navbar -->
-    <!-- Flex container -->
-    <div class="nav">
+<!-- Navbar -->
+<!-- Flex container -->
+<!-- 2 thẻ <ul>: flex item, thẻ <li> chỉ là flex item khi thẻ gần nhất chứa nó là flex container  -->
+<div class="nav">
     <ul class="nav-list">
         <li class="nav-item"> HOME</li>
-        <li class="nav-item"> DOWLOAD</li>
-        <li class="nav-item"> SOCIAL</li>
+        <li class="nav-item"> DOWNLOAD</li>
         <li class="nav-item"> ABOUT</li>
         <li class="nav-item"> CONTACT US</li>
     </ul>
- <!-- 2 thẻ <ul>: flex item, thẻ <li> chỉ là flex item khi thẻ gần nhất chứa nó là flex container  -->
     <ul class="nav-list">
         <li class="nav-item">SIGN IN</li>
         <li class="nav-item">SIGN OUT</li>
     </ul>
-<div>
-
+</div>    
+   
 <!-- Form layout -->
 <div class="form-container">
 <form action="" class="form">
@@ -42,26 +41,92 @@
 </form>
 </div>
 
-<!-- Column layout -->  
+<!-- comlumn layout -->
 <div class="column-layout">
-    <div class="column-item sidebar-one">
-        <h2>Sidebar one</h2>
-        <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time, I would like to apply today as a Sample position in permanent employment.</p>
+<div class="column-item sidebar-one">
+    <h2> Sidebar-one</h2>
+    <p> You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.</p>
+    <p> Look at the sunset, life is amazing, life is beautiful, life is what you make it. Life is what you make it, so let’s make it. </p>
+</div>
+
+<div class="column-item main-column">
+ <h2>Main column</h2>
+ <p> They never said winning was easy. Some people can’t handle success, I can. You see the hedges, how I got it shaped up?</p>
+ <p> It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.</p>
+ <p> Look at the sunset, life is amazing, life is beautiful, life is what you make it. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast.</p>
+</div>
+
+<div class="column-item sidebar-two">
+<h2>Sidebar-two</h2>
+<p> Doing the best at this moment puts you in the best place for the next moment! They never said winning was easy.</p>
+</div>
+</div>
+
+<!-- Feature layout -->
+<div class="feature-layout">
+    <div class="feature-item">
+        <h2>Feature 1</h2>
+        <p> You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. Another one.</p>
     </div>
-    <div class="column-item main-column">
-        <h2>Main column</h2>
+    <div class="feature-item">
+        <h2>Feature 2</h2>
+        <p> In life there will be road blocks but we will over come it. Another one. Learning is cool, but knowing is better, and I know the key to success. The key to more success is to get a massage once a week, very important, major key, cloth talk.</p>
+    </div>
+    <div class="feature-item">
+        <h2>Feature 3</h2>
+        <p> Life is what you make it, so let’s make it. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender.</p>
+    </div>
+</div>
+    
+<!-- Wrap layout -->
+<div class="wrap-layout">
+    <div class="wrap-layout__item">1</div>
+    <div class="wrap-layout__item">2</div>
+    <div class="wrap-layout__item">3</div>
+    <div class="wrap-layout__item">4</div>
+    <div class="wrap-layout__item">5</div>
+</div>
+
+<!--  Center layout -->
+<div class="center-layout">
+<h3 class="center-layout__item"> In life there will be road blocks but we will over come it. Another one. Learning is cool, but knowing is better, and I know the key to success. The key to more success is to get a massage once a week, very important, major key, cloth talk. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. I’m up to something. Life is what you make it, so let’s make it. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender.</h3>
+</div>
+
+<!-- chart -->
+<div class="chart-layout">
+<div class="chart-layout__item" style="--percent: 20%">30%</div>
+<div class="chart-layout__item" style="--percent: 40%">40%</div>
+<div class="chart-layout__item" style="--percent: 15%">35%</div>
+<div class="chart-layout__item" style="--percent: 60%">60%</div>
+<div class="chart-layout__item" style="--percent: 80%">60%</div>
+<div class="chart-layout__item" style="--percent: 75%">75%</div>
+<div class="chart-layout__item" style="--percent: 55%">55%</div>
+<div class="chart-layout__item" style="--percent: 20%">20%</div>
+<div class="chart-layout__item" style="--percent: 68%">68%</div>
+<div class="chart-layout__item" style="--percent: 69%">69%</div>
+<div class="chart-layout__item" style="--percent: 96%">46%</div>
+<div class="chart-layout__item" style="--percent: 60%">60%</div>
+<div class="chart-layout__item" style="--percent: 88%">88%</div>
+</div>
+
+ <!-- End -->
+ <div class="the-end">
+    <div class="the-end__first">
         <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time, I would like to apply today as a Sample position in permanent employment.</p>
         <p>At the moment I'm working as a Sample position at Sample company.My most important tasks include familiarizing myself with new products, conducting sales talks and transferring orders.</p>
         <p>Your job list sounds great! I hope that this will enable me to develop personal and professional development opportunities.I like your focus and image in this industry very well, so I see you as a very interesting employer.I have been following your development for a long time in the media and therefore believe that I also fit in well with the company.</p>
     </div>
-    <div class="column-item sidebar-two">
-        <h2>Sidebar two</h2>
-        <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time, I would like to apply today as a Sample position in permanent employment.</p>
+    <div class="the-end__second">
+        <div class="the-end__second-one">
+            <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me.Since I've been interested in your company for a long time.</p>
+        </div>
+        <div class="the-end__second-two">
+            <p>At the moment I'm working as a Sample position at Sample company.My most important tasks include familiarizing myself with new products, conducting sales talks and transferring orders.</p>
+        </div>
     </div>
+
+<div class="header">Phung Thi My Hanh</div>
 </div>
 
-<!--  lam tiep phan colum layout -->
-
 </body>
-
- </html>
+</html>
