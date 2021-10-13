@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body > div{
+    margin: auto;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+
+.btn{
+background-color: transparent;
+border: none;
+outline: none;
+background-color:violet;
+padding: 12px 48px;
+border-radius: 100px;
+font-family: cursive;
+transition: opacity 0.2s;
+cursor: pointer;
+min-width: 100px;
+  }
+  
+  .btn + .btn {
+      margin-left: 16px;
+      font-family: cursive ;
+  }
+
+  .btn--success{
+      background-color: yellowgreen;
+  }
+
+  .btn--warn{
+      background-color: tomato;
+  }
+
+  .btn--error{
+      background-color: turquoise;
+  }
+
+  .btn--danger{
+      background-color: rgb(218, 113, 218);
+  }
+
+  .btn:hover{
+      opacity: 0.8;
+  }
+
+  .btn--disabled{
+      opacity: 0.7 !important;
+  }
+
+  .btn--size-l{
+      padding: 15px 56px;
+  }
+
+  .btn--size-s{
+      padding: 8px 40px;
+  }
