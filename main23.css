@@ -52,15 +52,15 @@
   }
   
   .btn--success {
-    background-color: #71be34;
+    background-color: #f5575f;
   }
   
   .btn--warn {
-    background-color: #ffb702;
+    background-color: #f3f71d;
   }
   
   .btn--danger {
-    background-color: #ff623d;
+    background-color: #358b7d;
   }
   
   .btn--disabled, .btn[disabled] {
