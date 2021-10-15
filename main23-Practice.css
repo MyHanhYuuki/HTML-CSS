@@ -35,15 +35,15 @@ min-width: 100px;
   }
 
   .btn--success{
-      background-color: yellowgreen;
+      background-color: rgb(82, 199, 207);
   }
 
   .btn--warn{
-      background-color: tomato;
+      background-color: rgb(250, 90, 130);
   }
 
   .btn--error{
-      background-color: turquoise;
+      background-color: rgb(236, 233, 43);
   }
 
   .btn--danger{
