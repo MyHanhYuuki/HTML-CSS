@@ -1,0 +1,52 @@
+.header{
+    height: 120px;
+    background: linear-gradient( rgb(243, 33, 68), rgb(243, 164, 164));
+}
+
+/* The cha */
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The ul */
+.header__navbar-list{
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*  The li */
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 400;  
+}
+ /* 1.5 rem = 15px */
+
+.header__navbar-item{
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__navbar-item--strong{
+    font-weight: 600;
+}
+
+.header__navbar-item--separate::after{
+    content: "";   
+    position: absolute;
+    border-right: 1px solid #fff;
+    height: 11px;
+    right: -9px;
+    top: 2px;
+
+    /* Hoac lam bang cach Border-left nhu sau: */
+    /* border-left: 1px solid #fff ;
+    height: 12px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%); */
+}
