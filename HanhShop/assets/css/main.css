@@ -26,9 +26,17 @@
 }
  /* 1.5 rem = 15px */
 
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 18px;
 }
 
 .header__navbar-item--strong{
@@ -49,4 +57,29 @@
     right: -9px;
     top: 50%;
     transform: translateY(-50%); */
+}
+
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon{
+    font-size: 1.8rem;
+    /* 1.8rem tuong duong 18px */
+    margin: 0 4px 0;
+}
+
+/* Css cho cac icon dung vi tri */
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar-title--no-pointer{
+    cursor: text;
+    /* di chuot vao khong con la pointer ma la text */
+    color: var(--white-color);
 }
