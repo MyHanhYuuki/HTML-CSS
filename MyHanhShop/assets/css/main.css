@@ -135,5 +135,48 @@
     width: 100%;
     top: -10px;
 }
+ 
+.header__notify {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1.8px solid rgb(224, 174, 205);
+    right: 0;
+    top: 124%;
+    border-radius: 8px;
+    background-color: var(--white-color);
+}
+.header__notify-header {   
+    height: 40px;
+    background-color:var(--white-color);
+    margin: 0; 
+}
 
+.header__notify-header h3 {
+    color: rgb(90, 89, 89);
+    font-family: cursive;
+    margin: 5px 5px 0;
+    font-size: 13px;
+}
+.header__notify-list {
+    padding-left: 0;
 
+}
+.header__notify-item {
+
+}
+.header__notify-link {
+
+}
+.header__notify-img {
+
+}
+.header__notify-info {
+
+}
+.header__notify-name {
+
+}
+.header__notify-description{
+
+}
