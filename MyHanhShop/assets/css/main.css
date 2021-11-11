@@ -1,6 +1,6 @@
 .header{
     height: 120px;
-    background: linear-gradient( rgb(243, 33, 68), rgb(243, 164, 164));
+    background: linear-gradient( rgb(252, 84, 126), rgb(252, 155, 171));
 }
 
 /* The cha */
@@ -138,45 +138,83 @@
  
 .header__notify {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 330px;
     border: 1.8px solid rgb(224, 174, 205);
     right: 0;
     top: 124%;
     border-radius: 8px;
     background-color: var(--white-color);
 }
+
 .header__notify-header {   
-    height: 40px;
+    height: 30px;
     background-color:var(--white-color);
     margin: 0; 
 }
 
 .header__notify-header h3 {
-    color: rgb(90, 89, 89);
+    color: rgb(82, 81, 81);
     font-family: cursive;
     margin: 5px 5px 0;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 14px;
 }
+
 .header__notify-list {
     padding-left: 0;
-
 }
+
 .header__notify-item {
-
+    display: flex;
 }
+
+.header__notify-item:hover{
+    background-color: rgb(253, 211, 223);
+}
+
+.header__notify-item--viewed{
+    background-color: rgba(245, 196, 211, 0.3);
+}
+
 .header__notify-link {
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+    width: 100%;
 
 }
+
 .header__notify-img {
+    width: 48px;
+    padding-left: 0.5px;
+    object-fit: contain;
 
 }
+
 .header__notify-info {
-
+    list-style: none;
+    padding: 5px;
 }
+
 .header__notify-name {
+    display: block;
+    font-size: 13px;
+    font-family: initial;
+    color: var(--black-color);
 
 }
-.header__notify-description{
 
+.header__notify-description{
+    display:  block;
+    font-family: initial;
+    font-size: 11px;
+    color: var(--black-color);
+    padding-top: 3px;
+}
+
+.header__notify-footer-btn{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0px 90px;
 }
