@@ -152,10 +152,22 @@
     transform-origin: top right;
     animation: headerNotifyGrowth ease-in-out 0.15s;
     display: none;
-}
+} 
 
 .header__navbar-item--has-notify:hover .header__notify{
   display: block;   
+}
+
+
+.header__notify::before{
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: -2px;
+    top: -27px;
+    color: rgb(110, 107, 107);
 }
 
 @keyframes headerNotifyGrowth {
@@ -176,10 +188,10 @@
 }
 
 .header__notify-header h3 {
-    color: rgb(97, 96, 96);
+    color: rgb(119, 118, 118);
     font-family: cursive;
     margin: 5px 5px 0;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
 }
 
@@ -228,7 +240,6 @@
     color: var(--text-color);
     line-height: 1.1rem;
     font-style: italic;
-
 }
 
 .header__notify-description{
@@ -240,6 +251,7 @@
     padding-top: 2px;
     margin-top: 4px;
     letter-spacing: 0.4px;
+    word-spacing: 0.1px;
 }
 
 .header__notify-footer{
@@ -254,3 +266,4 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
+
