@@ -296,7 +296,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 60, 100, 0.35);
+    background-color: rgba(207, 29, 68, 0.35);
 }
 
 /* border form login */
@@ -309,4 +309,133 @@
     position: relative;
     z-index: 1;
 }
+
+/* Authen modal */
+.auth-form__input{
+    width: 100%;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight:530;
+    color:rgb(59, 59, 59);
+    font-family: cursive;
+    margin: 7px 0 3px;
+    background-color: rgb(255, 242, 242);
+    border-radius: 5px;
+    padding-left: 8px;
+    border: 1px solid var(--border-color);
+    outline-color: rgb(231, 133, 166);
+}
+
+.auth-form__input:focus{
+    border-color: rgb(133, 131, 131);
+}
+
+.auth-form__form{
+    margin-top: 16px;
+}
+
+.auth-form__container{
+    padding: 10px 20px;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading{
+    font-weight: 800;  
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
+    font-family: cursive;
+    color: rgb(88, 88, 88);
+}
+
+.auth-form__switch-btn{
+    font-size: 1.4rem;
+    font-weight: 550;
+    letter-spacing: -0.2px;
+    font-family: cursive;
+    color: var(--primary-color);
+}
+
+.auth-form__aside{
+    margin-top: 20px;
+}
+
+.auth-form__policy-text{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(36, 35, 35);
+    line-height: 1.7rem;
+    margin-bottom: 20px;
+    padding-left: 8px;
+}
+
+.auth-form__text-link{
+    text-decoration: none;
+    color:rgb(238, 4, 35);
+}
+
+.auth-form__controls{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* btn style */
+.btn{
+    min-width: 90px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 0; 
+    cursor: pointer;
+}
+
+.btn.btn--primary{ 
+    color: var(--black-color);
+    font-family: cursive;
+    background-color: var(--primary-color);
+    font-weight: 300;  
+}
+
+.btn.btn--normal{
+    color:var(--black-color);
+    font-family: cursive;
+    background-color: rgb(226, 167, 226);
+    margin-right: 10px;
+}
+
+.auth-form__socials{
+    background-color: rgb(247, 217, 252);
+    padding: 10px; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn.btn--with-icon{
+    margin-right: 15px;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+
+
+
+
+
 
