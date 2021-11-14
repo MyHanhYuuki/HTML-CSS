@@ -1,12 +1,12 @@
 :root{
-    --white-color: rgb(253, 252, 253);
+    --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
 }
 
 *{
     box-sizing: inherit;
-    /* inherit: ke thua tu the chua no. * la ap dung cho tat ca cac file html co link den file css nay */
+    /* inherit: kế thừa từ thẻ chứa nó * la ap dung cho tat ca cac file html co link den file css nay */
 }
 
  html{
