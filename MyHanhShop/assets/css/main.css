@@ -603,7 +603,7 @@
 }
 
 .header__logo{
-    width: 200px;
+    width: 180px;
 }
 
 .header__logo-img1{
@@ -614,34 +614,15 @@
     padding-top: 30px;
 }
 
-
-.header__logo-img1:hover{
-    margin-left: 60px;
-}
-
 .header__logo-img2{
     width: 25%;
     height: 25%;
     margin: 0;
 }
 
-.header__logo-img2:hover{
-    margin-left: 60px;
-}
-
-.header__name{
-    width: 100px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px; 
-    margin-right: -20px;
-}
-
 .header__name-icon{
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 }
 
 .header__search{
@@ -649,19 +630,20 @@
     height: 40px;
     background-color: var(--white-color);
     border-radius: 8px; 
-    width: 180px;
+    width: 200px;
     display: flex;
     justify-content: right;
+    margin-left: -15px;
 }
 
 .header__cart{
     width: 140px;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 .header__cart-icon{
-    width: 35%;
-    width: 35%;
+    width: 30%;
+    width: 30%;
     padding-left: 10px;
     height: 60px;
     width: 60px;
@@ -672,35 +654,67 @@
     flex: 1;
     border-radius: 8px; 
     height: 40px;
-    background-color: var(--white-color);
     width: 560px;
     font-size: 1.3rem;
     padding-left: 12px;
     font-family: inherit;
     font-weight: 600;
     border: none;
+    outline: none;
+}
+
+.header__search-input:hover{
+   outline-color: rgb(216, 7, 7);
+
 }
 
 .header__search-selection{
     display: flex;
+    border-left: 1px solid rgb(253, 169, 197);
+    padding-left: 8px;
+    margin: 5px 0;
 }
 
 .header__search-selection-label{
-    margin: 0;
     width: 80px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 10px;
-    padding-bottom: 7px;
     font-weight: 600;
+    color: var(--text-color);
+    padding-bottom: 20px; 
+    font-size: 1.1rem;
+}
 
+.header__search-btn{
+    outline: none;
+    border: none;
+    background-color: var(--white-color);
+    border: 1px solid rgb(245, 166, 192);
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.header__search-btn:hover{
+    background-color: rgb(252, 238, 243);
+    z-index: 0;
+
+}
+
+.header__search-btn-icon{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 4px;
 }
 
 .header__search-selection-icon{
-    height: 60%;
-    width: 45%;
-    padding-bottom: 5px;
-
+    width: 20%;
+    height: 20%;
 }
+
+.header__search-selection-icon:hover{
+    color: #000000;
+}
+
