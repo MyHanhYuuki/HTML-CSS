@@ -1,9 +1,10 @@
+
+/* Header - Navbar */
 .header{
     height: var(--header-height);
     background: linear-gradient( rgb(248, 99, 136), rgb(252, 155, 171));
 }
 
-/* The cha */
 .header__navbar{
     display: flex;
     justify-content: space-between;
@@ -162,7 +163,7 @@
   display: block;   
 }
 
-/* Dấu mũi tên chỉa vào chữ thông báo( là hình tam giác 1/4 của hình vuông) */
+/* Mũi tên chỉ vào notify ( là hình tam giác: 1/4 của hình vuông) */
 .header__notify::before{
     content: "";
     border-width: 20px 30px;
@@ -522,6 +523,7 @@
     background-color: rgb(218, 139, 211);
 }
 
+/* icon google có màu */
 .fa-google {
     background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
     -webkit-background-clip: text;
@@ -660,6 +662,8 @@
     cursor: pointer;
 }
 
+
+/* div wrap */
 .header__search-input-wrap{
     flex: 1;
     height: 100%;
@@ -792,7 +796,7 @@
     cursor: pointer;
 }
 
-/* border-radius fist and last item : phong khi co nhieu hon 2 item da co */
+/* border-radius fist and last item : phong khi co nhieu hon 2 items da co */
 .header__search-option-item:first-child{
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -838,11 +842,17 @@
     display: none;
 }
 
-.header__search-input-wrap:hover
+
+/* hover vao se ra bang history, k phu hop dung o day*/
+/* .header__search-input-wrap:hover
 .header__search-history{
     display: block;
-}
+} */
 
+/* Css selector: click vao input moi ra bang history */
+.header__search-input:focus ~ .header__search-history{
+    display: block;
+}
 
 /* Cau noi qua history */
 .header__search-history::after{
@@ -894,3 +904,4 @@
     font-weight: 600;
     color: var(--text-color);
 }
+
