@@ -674,12 +674,14 @@
     box-shadow: 0 2px 8px var(--primary-color);
     display: none;
     margin-top: -6px;
-    animation: headerNotifyGrowth ease-in-out 0.05s;
+    animation: fadeIn ease-in-out 0.05s;
+    cursor: default;
 }
 
 .header__cart-list--empty-cart h3{
     color: var(--text-color);
     padding-bottom: 15px;
+    user-select: none;
 
 }
 
@@ -689,6 +691,7 @@
     margin: 0;
     padding-top: 50px;
     padding-left: 10px;
+    user-select: none;
 }
 
 .header__cart-list::after{
@@ -948,4 +951,5 @@
     color: var(--text-color);
     display: block;
 }
+
 
