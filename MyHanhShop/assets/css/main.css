@@ -157,6 +157,7 @@
     display: none;
     will-change: opacity, transform;
     /* tối ưu thuộc tính opacity và transform */
+    z-index: 1;
 } 
 
 .header__navbar-item--has-notify:hover .header__notify{
@@ -651,30 +652,35 @@
 
 /* Cart */
 .header__cart{
-    width: 140px;
-    padding-left: 30px;
+    width: 60px;
+    margin-left: 32px;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 
 .header__cart-icon{
-    width: 30%;
-    width: 30%;
-    padding-left: 10px;
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
+    width: 90%;
+    height: 90%;  
 }
 
 .header__cart-list{
     position: absolute;
     top: 100%;
-    right: 20px;
+    right: 0;
     background-color: var(--white-color);
     width: 350px;
     border-radius: 6px;
     box-shadow: 0 2px 8px var(--primary-color);
     display: none;
+    margin-top: -6px;
+    animation: headerNotifyGrowth ease-in-out 0.05s;
+}
+
+.header__cart-list--empty-cart h3{
+    color: var(--text-color);
+    padding-bottom: 15px;
+
 }
 
 .header__cart-empty-cart-img{
@@ -685,10 +691,19 @@
     padding-left: 10px;
 }
 
+.header__cart-list::after{
+    content: "";
+    border-width: 18px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 0;
+    top: -26px;
+}
+
 .header__cart:hover .header__cart-list{
     display: block;
 }
-
 
 
 /* div wrap */
@@ -782,7 +797,7 @@
     background-color: var(--white-color);
     box-shadow: 0 2px 8px var(--primary-color);
     display: none;
-    animation: fadeIn ease-in 0.2s;
+    animation: headerNotifyGrowth ease-in-out 0.05s;
     border-radius: 6px;
     padding: 0;
 }
