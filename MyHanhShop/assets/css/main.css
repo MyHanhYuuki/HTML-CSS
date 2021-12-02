@@ -694,7 +694,9 @@
     user-select: none;
 }
 
+/* Dau mui ten (1/4 HCM) chia vao icon cart */
 .header__cart-list::after{
+    cursor: pointer;
     content: "";
     border-width: 18px 30px;
     border-style: solid;
