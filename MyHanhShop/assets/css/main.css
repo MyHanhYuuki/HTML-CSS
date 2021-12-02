@@ -685,6 +685,13 @@
 
 }
 
+.header__cart-list--has-cart h3{
+    color: var(--text-color);
+    padding-bottom: 15px;
+    user-select: none;
+
+}
+
 .header__cart-empty-cart-img{
     width: 40%;
     height: 40%;
@@ -692,6 +699,23 @@
     padding-top: 50px;
     padding-left: 10px;
     user-select: none;
+}
+
+.header__cart-img{
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 10px;
+    user-select: none;
+}
+
+.header__cart-item{
+    display: flex;
+}
+
+.header__cart-item-info{
+    display: flex;
 }
 
 /* Dau mui ten (1/4 HCM) chia vao icon cart */
