@@ -672,7 +672,7 @@
     width: 350px;
     border-radius: 6px;
     box-shadow: 0 2px 8px var(--primary-color);
-    margin-top: -4px;
+    margin-top: -3px;
     animation: fadeIn ease-in-out 0.05s;
     cursor: default;
     /* display: none; */
@@ -728,31 +728,66 @@
 }
 
 /* Has cart: cac class k co Modified Empty-cart la dc, k can dat them Modified la Has-cart */
-.header__cart-img{
-    width: 10%;
-    height: 10%;
-
-}
 
 .header__cart-heading{
     color: var(--text-color);
     padding-bottom: 15px;
     user-select: none;
     font-size: 1.05rem;
+}
 
+.header__cart-list-item{
+    padding: 0;
+ }
+ 
+ .header__cart-item{
+     list-style: none;
+     display: flex;
+ }
+
+.header__cart-item:hover{
+     background-color: #F8F8F8;
+ }
+
+.header__cart-img{
+    width: 10%;
+    height: 10%;
 }
 
 .header__cart-item-info{
     display: inline-flex;
 }
 
-.header__cart-list-item{
-   padding: 0;
+.header__cart-item-head{
+
 }
 
-.header__cart-item{
-    list-style: none;
-    display: flex;
+.header__cart-item-name{
+
+}
+
+.header__cart-item-price{
+
+}
+
+.header__cart-item-multiply{
+
+}
+
+.header__cart-item-quantity{
+
+}
+
+.header__cart-item-body{
+
+}
+
+.header__cart-item-description{
+
+}
+
+.header__cart-item-remove{
+    
 }
 
 
@@ -998,5 +1033,3 @@
     color: var(--text-color);
     display: block;
 }
-
-/* 7p clip 62, xem lại clip 61 */
