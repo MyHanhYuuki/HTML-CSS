@@ -732,26 +732,33 @@
 .header__cart-heading{
     color: var(--text-color);
     padding-bottom: 15px;
+    padding-top: 20px;
+    color: var(--text-color);
+    margin: 0;
     user-select: none;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
 }
 
 .header__cart-list-item{
-    padding: 0;
+    padding-left: 0;
+    list-style: none;
+
  }
  
  .header__cart-item{
-     list-style: none;
      display: flex;
+     cursor: pointer;
  }
 
 .header__cart-item:hover{
-     background-color: #F8F8F8;
+     background-color: var(--hover-color);
  }
 
 .header__cart-img{
-    width: 10%;
-    height: 10%;
+    width: 12%;
+    height: 12%;
+    margin: 12px;
+
 }
 
 .header__cart-item-info{
@@ -759,10 +766,17 @@
 }
 
 .header__cart-item-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 
 }
 
 .header__cart-item-name{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
 
 }
 
@@ -854,7 +868,7 @@
 }
 
 .header__search-btn:hover{
-    background-color: rgb(252, 238, 243);
+    background-color: var(--hover-color);
 
 }
 
@@ -942,7 +956,7 @@
 }
 
 .header__search-option-item:hover{
-    background-color: rgb(252, 233, 242);
+    background-color: var(--hover-color);
 }
 
 .header__search-option-icon{
@@ -1022,7 +1036,7 @@
 }
 
 .header__search-history-item:hover{
-    background-color: rgb(252, 233, 242);
+    background-color: var(--hover-color);
 }
 
 .header__search-history-item a{
@@ -1033,3 +1047,6 @@
     color: var(--text-color);
     display: block;
 }
+
+
+/* 15p */
