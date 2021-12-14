@@ -16,6 +16,7 @@
 .header__navbar-list{
     list-style: none;
     padding-left: 0px;
+    display: flex;
 }
 
 /* display:none; o header__qr vaf display:block; class con nay cua no */
@@ -43,11 +44,110 @@
 }
 
 .header__navbar-item{
-    margin: 0 8px;
+    margin: 2px 8px;
     position: relative;
     min-height: 18px;
 }
 
+.header__navbar-user{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header__navbar-user-avt{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: -4px;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+
+.header__navbar-user-name{
+    margin-left: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.header__navbar-user-menu{
+    position: absolute;
+    padding-left: 0;
+    top: 124%;
+    right: -8px;
+    width: 100px;
+    background-color: var(--white-color);
+    list-style: none;
+    z-index: 1;
+    border-radius: 6px;
+    cursor: default;
+    box-shadow: 0 4px 8px var(--primary-color);
+    display: none;
+}
+
+.header__navbar-user-item a{
+    text-decoration: none;
+    padding: 8px 0px 8px 8px;
+    color: var(--text-color);
+}
+
+.header__navbar-user-item:hover{
+    background-color: var(--hover-color);
+}
+
+/* Cau noi qua option cua "user" */
+.header__navbar-user-menu::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    top: -12px;
+    right: 0;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
+
+.header__navbar-user-heading{
+    color: rgb(145, 145, 145);
+    padding-left: 9px;
+    font-size: 1.16rem;
+    margin-bottom: 6px;
+    user-select: none;
+}
+
+.header__navbar-user-item{
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;  
+}
+
+.header__navbar-user-item:first-child{
+    margin-top: 10px;
+}
+
+.header__navbar-user-item:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* margin-bottom: 10px; */
+} 
+
+/* Mũi tên chỉ vào user ( là hình tam giác: 1/4 của hình vuông) */
+.header__navbar-user-menu::before{
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: -1px;
+    top: -27px;
+}
+
+/* Navbar  */
 .header__navbar-item--strong{
     font-weight: 600;
 }
@@ -129,7 +229,7 @@
     height: 13px;
 }
 
-/* element */
+/* Element */
 .header__qr::before{
     position: absolute;
     content: "";
@@ -145,11 +245,10 @@
 .header__notify {
     position: absolute;
     width: 310px;
-    height: 420px;
     border: 1.8px solid rgb(224, 174, 205);
     right: 0;
     top: 124%;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: var(--white-color);
     cursor: default;
     transform-origin: top right;
@@ -206,10 +305,9 @@
 }
 
 .header__notify-header h3 {
-    color: rgb(119, 118, 118);
-    font-family: cursive;
-    margin: 5px 5px 0;
-    font-size: 11px;
+    color: rgb(107, 107, 107);
+    margin: 12px 8px 0;
+    font-size: 1.15rem;
     line-height: 14px;
 }
 
@@ -222,11 +320,11 @@
 }
 
 .header__notify-item:hover{
-    background-color: rgb(253, 211, 223);
+    background-color: var(--hover-color);
 }
 
 .header__notify-item--viewed{
-    background-color: rgba(245, 196, 211, 0.3);
+    /* background-color: rgba(245, 196, 211, 0.3); */
 }
 
 .header__notify-link {
@@ -234,11 +332,11 @@
     padding: 4px;
     text-decoration: none;
     width: 100%;
-
 }
 
 .header__notify-img {
     width: 48px;
+    top: 0;
     padding-left: 0.5px;
     object-fit: contain;
 }
@@ -246,30 +344,24 @@
 .header__notify-info {
     list-style: none;
     padding: 5px 7px;
+    color: var(--black-color);
 }
 
 .header__notify-name {
     display: block;
-    font-size: 13px;
-    font-weight: 550;
-    font-family: monospace;
-    letter-spacing: -0.6px;
-    word-spacing: 1px;
-    color: var(--text-color);
-    line-height: 1.1rem;
-    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--black-color);
+    line-height: 1.2rem;
 }
 
 .header__notify-description{
     display:  block;
-    font-family: monospace;
-    font-style: italic;
-    font-size: 11px;
-    color: var(--black-color);
+    font-size: 1.15rem;
     padding-top: 2px;
     margin-top: 4px;
-    letter-spacing: 0.4px;
-    word-spacing: 0.1px;
+    color: var(--black-color);
+
 }
 
 .header__notify-footer{
@@ -283,6 +375,10 @@
     margin: auto; 
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.header__notify-footer-btn:hover{
+    color: #f7115d;
 }
 
 /* Animation */
@@ -930,6 +1026,7 @@
     animation: headerNotifyGrowth ease-in-out 0.05s;
     border-radius: 6px;
     padding: 0;
+    cursor: default;
 }
 
 .header__search-selection:hover .header__search-option{
@@ -949,7 +1046,7 @@
 
 .header__search-option-heading{
     color: rgb(145, 145, 145);
-    padding-left: 6px;
+    padding-left: 8px;
     font-size: 1.16rem;
     margin-bottom: 6px;
     user-select: none;
@@ -967,6 +1064,11 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+}
+
+.header__search-option-item:last-child{
+    padding-bottom: 4px;
+
 }
 
 /* border-radius fist and last item : phong khi co nhieu hon 2 items da co */
@@ -1078,3 +1180,4 @@
     color: var(--text-color);
     display: block;
 }
+
