@@ -380,6 +380,9 @@
 
 .header__notify-footer{
     display: flex;
+    border-top: 1.5px solid #f18ebc;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .header__notify-footer-btn{
@@ -392,7 +395,7 @@
 }
 
 .header__notify-footer-btn:hover{
-    color: #f7115d;
+    color: #f1407b;
 }
 
 /* Animation */
