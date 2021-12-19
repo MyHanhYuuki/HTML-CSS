@@ -1,6 +1,6 @@
 
 /* Header - Navbar */
-.header{
+.app__header{
     height: var(--header-height);
     background: linear-gradient( rgb(248, 99, 136), rgb(252, 155, 171));
 }
@@ -1223,13 +1223,30 @@
     display: block;
 }
 
+/* Container */
 
+.app__container{
+    background-color: #ffebee;
+}
 
-.container{
+.category{
+    background-color: var(--white-color);
+    border-radius: 4px;
+
+}
+
+.category__heading{
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+}
+
+.category__heading-icon{
 
 }
 
 .category-list{
+    list-style: none;
 
 }
 

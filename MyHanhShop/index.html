@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
+
 <body>
     <!-- Block__element--modifier -->
     <div class="app">
-        <header class="header">
+        <header class="app__header">
             <div class="grid">
 
                 <!-- Navbar -->
@@ -143,7 +145,6 @@
                 </nav>
 
                 <div class="header-with-search"> 
-
                     <!-- Logo -->
                     <div class="header__logo">
                        <a href="/" class="header__logo-link">
@@ -326,38 +327,41 @@
             </div>          
         </header>      
 
-        <div class="container">
-           <div class="grid__row">
-               <!-- 2 column cho danh muc -->
-               <div class="column-2">
-                <nav class="category">
-                    <h3 class="category__heading">
-                        <i class="fas fa-list-ul"></i>
-                        Danh mục</h3>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- 2 column cho danh muc -->
+                    <div class="column-2">
+                     <nav class="category">
+                         <h3 class="category__heading">
+                             <i class="category__heading-icon fas fa-list-ul"></i>
+                             Danh mục</h3>
+          
+                         <ul class="category-list">
+                             <li class="category-item category-item--active">
+                                 <a href="#" class="category-item__link">Đồ dùng học tập</a>
+                             </li>
+                             <li class="category-item">
+                                 <a href="#" class="category-item__link">Đồ trang trí</a>
+                             </li>
+                             <li class="category-item">
+                                 <a href="#" class="category-item__link">Đồ lưu niệm</a>
+                             </li>
+                             <li class="category-item">
+                                 <a href="#" class="category-item__link">Đồ làm quà tặng</a>
+                             </li>
+                         </ul>
+                         
+                     </nav>
      
-                    <ul class="category-list">
-                        <li class="category-item category-item--active">
-                            <a href="#" class="category-item__link">Đồ dùng học tập</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="#" class="category-item__link">Đồ trang trí</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="#" class="category-item__link">Đồ lưu niệm</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="#" class="category-item__link">Đồ làm quà tặng</a>
-                        </li>
-                    </ul>
-                    
-                </nav>
+                    </div>
+     
+                    <div class="column-10">
+                        
+                    </div>
+                </div>
 
-               </div>
-
-               <div class="column-10">
-                   
-               </div>
-           </div>          
+            </div>                   
 
         </div>
 
