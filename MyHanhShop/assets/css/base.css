@@ -41,4 +41,19 @@
      flex-wrap: wrap;
      /* cac thuoc tinh nam ngang */
      /* tong do dai qua grid__row se duoc xuong hang */
+     margin-left: -12px;
+     margin-right: -12px;
+ }
+
+ /* test sẽ sua sau khi co responsive */
+ .grid__column-2{
+     padding-left: 12px;
+     padding-right: 12px;
+     width: 16.6667;
+ }
+
+ .grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 66.6667;
  }
