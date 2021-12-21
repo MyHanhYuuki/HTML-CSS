@@ -1282,10 +1282,18 @@
 }
 
 .category-item__link{
+    position: relative;
     text-decoration: none;
     font-size: 1.3rem;
     color: var(--text-color);
-    font-weight: 600;   
+    font-weight: 600; 
+    transition: right top liner 0.1s;
+    right: 2px;  
+}
+
+.category-item__link:hover{
+    right: -8px;
+    top: -5px;
 }
 
 /* 67 - 3p40 */
