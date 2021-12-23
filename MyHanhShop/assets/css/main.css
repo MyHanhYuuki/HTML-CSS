@@ -1307,3 +1307,50 @@
 .category-item__link:hover{
     right: -12px;
 }
+
+
+/* column-10 */
+.home__filter{
+    margin-left: 20px;
+    margin-top: 4px;
+    display: flex;
+
+}
+
+.home__filter-label{
+    font-size: 1.35rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #f1d3ea;
+    font-weight: 600;
+    padding: 0 18px;
+}
+
+.btn.btn--chose{
+    background-color: var(--primary-color);
+    font-size: 1.35rem;
+    font-weight: 600;
+    border-right: 0.5px solid rgb(253, 169, 197);
+}
+
+.btn.btn--choice{
+    background-color: var(--hover-color);
+    font-size: 1.35rem;
+    font-weight: 600;
+    border-right: 0.5px solid rgb(253, 189, 210);
+}
+
+.select-input{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 1.35rem;
+    font-weight: 600;
+    padding: 0 18px;
+    background-color: var(--hover-color);
+}
+
+.select-input-icon{
+    padding-left: 80px;
+}
