@@ -804,6 +804,7 @@
     animation: headerNotifyGrowth ease-in-out 0.12s;
     will-change: opacity, transform;
     /* tối ưu thuộc tính opacity và transform */
+    z-index: 1;
 }
 
 .header__cart-list-empty-cart-smg{
@@ -1061,19 +1062,8 @@
     animation: headerNotifyGrowth ease-in-out 0.12s;
     will-change: opacity, transform;
     /* tối ưu thuộc tính opacity và transform */
+    z-index: 1;
 }
-
-/* Mũi tên chỉ vào option ( là hình tam giác: 1/4 của hình vuông) */
-.header__search-option::before{
-    content: "";
-    border-width: 14px 35px;
-    border-style: solid;
-    border-color: transparent transparent var(--white-color) transparent;
-    position: absolute;
-    right: 12px;
-    top: -18px;
-}
-
 
 .header__search-selection:hover .header__search-option{
     display: block;
@@ -1093,7 +1083,7 @@
 .header__search-option-heading{
     color: rgb(119, 118, 118);
     padding-left: 8px;
-    font-size: 1.16rem;
+    font-size: 1.2rem;
     margin-bottom: 6px;
     user-select: none;
 }
@@ -1103,17 +1093,18 @@
 } */
 
 .header__search-option-item{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    padding: 2px 0;
 }
 
 .header__search-option-item:last-child{
-    padding-bottom: 4px;
+    padding-bottom: 3px;
 }
 
 /* border-radius fist and last item : phong khi co nhieu hon 2 items da co */
@@ -1138,11 +1129,9 @@
 }
 
 .header__search-option-icon{
-    width: 30%;
-    height: 30%;
-    padding-left: 10px;
-    padding-top: 0px;
-    padding-right: 3px;
+    width: 16%;
+    height: 16%;
+    margin-right: 6px;
     color: var(--primary-color);
 }
 
@@ -1245,7 +1234,7 @@
     display: flex;
     justify-content: center;
     border-bottom: 4px solid #fa979c;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 4px;
 }
 
@@ -1290,7 +1279,6 @@
     top: 50%;
     left: -10px;
     transform: translateY(calc(50% - 8px));
-
 }
 
 /* Chuyen dong: liner */
@@ -1311,9 +1299,10 @@
 
 /* column-10 */
 .home__filter{
-    margin-left: 20px;
-    margin-top: 4px;
+    margin-left: 70px;
+    margin-top: 8px;
     display: flex;
+    box-shadow: 0 2px 8px var(--primary-color);
 
 }
 
@@ -1322,23 +1311,29 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    background-color: #f1d3ea;
+    background-color:#ffe1ea;
     font-weight: 600;
-    padding: 0 18px;
+    padding: 0 44px;
+    border-right: 0.5px solid #ff92a4;
+    user-select: none;
 }
 
 .btn.btn--chose{
     background-color: var(--primary-color);
     font-size: 1.35rem;
     font-weight: 600;
-    border-right: 0.5px solid rgb(253, 169, 197);
+    border-right: 0.5px solid #ff92a4;
 }
 
 .btn.btn--choice{
-    background-color: var(--hover-color);
+    background-color: #ffeaee;
     font-size: 1.35rem;
     font-weight: 600;
-    border-right: 0.5px solid rgb(253, 189, 210);
+    border-right: 0.5px solid #ff92a4;
+}
+
+.select-input-icon{
+    padding-left: 80px;
 }
 
 .select-input{
@@ -1348,9 +1343,100 @@
     font-size: 1.35rem;
     font-weight: 600;
     padding: 0 18px;
+    background-color: #ffeaee;
+    position: relative;
+}
+
+.select-input-option{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 8px var(--primary-color);
+    display: none;
+    animation: headerNotifyGrowth ease-in-out 0.05s;
+    border-radius: 6px;
+    padding: 0;
+    cursor: default;
+    transform-origin: calc(100% - 32px) top;
+    animation: headerNotifyGrowth ease-in-out 0.12s;
+    will-change: opacity, transform;
+    /* tối ưu thuộc tính opacity và transform */
+    z-index: 1;
+    margin-top: 6px;
+}
+
+.select-input:hover .select-input-option{
+    display: block;
+}
+
+/* Cau noi qua option cua select input*/
+.select-input-option::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    top: -12px;
+    right: 0;
+}
+
+.select-input-option-heading{
+    color: rgb(119, 118, 118);
+    padding-left: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    user-select: none;
+}
+
+.select-input-option-item{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+.select-input-option-item:last-child{
+    padding-bottom: 4px;
+}
+
+/* border-radius fist and last item : phong khi co nhieu hon 2 items da co */
+.select-input-option-item:first-child{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.select-input-option-item:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* margin-bottom: 10px; */
+} 
+
+.select-input-option-item span{
+    padding: 8px 0px 3px 8px;
+    height: 30px;
+    transition: right liner 0.1s;
+    right: 0px; 
+}
+
+.select-input-option-item span:hover{
+    right: 12px;
+}
+
+.select-input-option-item:hover{
     background-color: var(--hover-color);
 }
 
-.select-input-icon{
-    padding-left: 80px;
+.select-input-option-icon{
+    width: 18%;
+    height: 18%;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-right: 8px;
+    color: var(--primary-color);
 }
