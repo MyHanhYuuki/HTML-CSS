@@ -328,9 +328,9 @@
 
         <div class="app__container">
             <div class="grid">
-                <div class="grid__row">
-                    <!-- 2 column cho danh muc -->
-                    <div class="column-2">
+                <div class="grid__row app__content">
+
+                    <div class="grid__column-2">
                      <nav class="category">
                          <h3 class="category__heading">
                              <i class="category__heading-icon fas fa-list-ul"></i>
@@ -361,7 +361,7 @@
      
                     </div>
      
-                    <div class="column-10">
+                    <div class="grid__column-10">
                         <div class="home__filter">
                             <span class="home__filter-label">Sắp xếp theo</span>
                             <button class="btn btn--choice">Phổ biến</button>
@@ -384,7 +384,22 @@
                                    </ul>
                             </div>
 
-                            <div class="home-filter__paginate"></div>
+                            <div class="home-filter__paginate">
+                                <span class="home-filter__paginate-num">
+                                    <span class="home-filter__paginate-current">1</span>
+                                    / 16
+                                </span>
+
+                                <div class="home-filter__paginate-control">
+                                    <a href="" class="home-filter__paginate-btn home-filter__paginate-btn--disabled">
+                                        <i class="home-filter__paginate-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__paginate-btn">
+                                        <i class="home-filter__paginate-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+
+                            </div>
 
                         </div>
 
