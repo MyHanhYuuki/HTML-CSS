@@ -1242,7 +1242,7 @@
 .category__heading-icon{
     font-size: 1.3rem;
     padding-top: 1.9px;
-    margin-right: 10px;
+    margin-right: 24px;
     position: relative;
 
 }
@@ -1514,56 +1514,89 @@
 /* Product */
 .home-product-item{
     background-color: var(--white-color);
-    margin-top: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px var(--primary-color);
 
 }
 
 .home-product-item__img{
     padding-top: 100%;
+    padding-right: 0;
     justify-content: center;
     background-repeat: no-repeat;
     background-size: contain;
+    /* background-position: center; */
+
 
 }
 
 .home-product-item__name{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     padding-left: 6px;
-    padding-right: 6px;
+    padding-right: 4px;
     color: var(--black-color);
     line-height: 1.8rem;
     margin-top: 10px;
+    margin-bottom: 0;
     height: 3.6rem;
     overflow: hidden;
     display: block;
-    display: --webkit-box;
-    --webkit-box-orient: vertical;
-    --webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* case 1- line */
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
 }
 
 .home-product-item__price{
-
+    display: flex;
+    margin-top: 12px;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
  
 .home-product-item__price-old{
-
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    font-weight: 600;
+    margin-left: 8px;
 }
 
-.home-product-item__price-new{
-
+.home-product-item__price-current{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary-color);
+    margin-left: 14px;
 }
 
 .home-product-item__action{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 10px;
 }
 
 .home-product-item__like{
+    margin: 0 12px;
+    font-size: 1.35rem;
+}
 
+i.home-product-item__like-icon-empty{
+    display: none;
+    color: var(--text-primary-color);
+
+}
+
+.home-product-item__like-icon-fill{
+    color: var(--text-primary-color);
 }
   
 .home-product-item__rating{
-
+    margin: 0 8px;
+    color: var(--text-primary-color);
+    font-size: 0.9rem;
 }
 
 .home-product-item__place{
