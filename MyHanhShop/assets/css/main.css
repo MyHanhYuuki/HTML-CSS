@@ -1512,12 +1512,25 @@
 }
 
 /* Product */
+.home-product{
+    margin-bottom: 20px;
+}
+
 .home-product-item{
     background-color: var(--white-color);
-    margin-top: 20px;
-    box-shadow: 0 2px 8px var(--primary-color);
+    margin-top: 28px;
+    box-shadow: 0 2px 8px var(--solid-color);
     position: relative;
     border-radius: 10px;
+    transition: transform ease 0.08s;
+    will-change: transform;
+    display: block;
+    text-decoration: none;
+}
+
+.home-product-item:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px var(--text-primary-color);
 
 }
 
@@ -1560,16 +1573,17 @@
 }
  
 .home-product-item__price-old{
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     text-decoration: line-through;
     font-weight: 600;
     margin-left: 8px;
+    color: var(--black-color);
 }
 
 .home-product-item__price-current{
-    font-size: 1.4rem;
-    font-weight: 750;
-    color: var(--text-primary-color);
+    font-size: 1.45rem;
+    font-weight: 880;
+    color: rgb(255, 15, 67);
     margin-left: 19px;
 }
 
@@ -1582,7 +1596,7 @@
 
 .home-product-item__like{
     margin: 0 10px;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
 }
 
 .home-product-item__like-icon-empty{
@@ -1590,7 +1604,7 @@
 }
 
 i.home-product-item__like-icon-fill{
-    color: red;
+    color: rgb(255, 28, 77);
     display: none;
 }
 
@@ -1603,13 +1617,13 @@ i.home-product-item__like-icon-fill{
 }
   
 .home-product-item__rating{
-    margin: 0 6px;
-    color: #fdb0d4;
+    margin: 0 2px;
+    color: #afafaf;
     font-size: 0.8rem;
 }
 
 .home-product-item__star-fill{
-    color: var(--text-primary-color);
+    color: #ff6d75;
 }
 
 .home-product-item__sold{
@@ -1620,12 +1634,13 @@ i.home-product-item__like-icon-fill{
 }
 
 .home-product-item__place{
-    margin: 10px 0 15px 64px;
-
+    margin: 10px 4px 10px 66px;
+    padding-bottom: 10px;
+    color: var(--black-color);
 }
 
 .home-product-item__place-icon{
-    color: #ff4573;
+    color: #ff6d75;
     font-size: 1rem;
     padding-right: 4px;
 }
@@ -1637,12 +1652,12 @@ i.home-product-item__like-icon-fill{
 
 .home-product-item__favourite{
     position: absolute;
-    top: 15px;
-    left: -4px;
+    top: 12px;
+    left: -6px;
     color: var(--white-color);
     font-weight: 600;
     font-size: 1.1rem;
-    padding: 2px 4px;
+    padding: 2px 6px 2px 0px;
     background-color: rgb(255, 100, 139);
     box-shadow: 0 2px 8px var(--write-color);
     border-top-right-radius: 3px;
@@ -1651,19 +1666,56 @@ i.home-product-item__like-icon-fill{
 
 .home-product-item__favourite i{
     font-size: 0.9rem;
-    padding: 0 2px;
+    padding: 0 4px;
+}
+
+/* Element hinh tam giac ( 2 hinh tam giac tao thanh hinh vuong) */
+.home-product-item__favourite::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-top: 5.7px solid var(--primary-color);
+    border-left: 5.7px solid transparent;
+    filter: brightness(90%);
 }
 
 .home-product-item__sale-off{
-
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 37px;
+    background-color: rgba(255, 215, 57, 0.94);
+    text-align: center;
+    border-top-right-radius: 10px;
 }
 
-.home-product-item__sale-off-percent{
-
+/* 2 hinh tam giac duoi nhan giam gia */
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-width: 0 19px 8px;
+    border-style: solid;
+    border-color: transparent rgba(255, 215, 57, 0.94) transparent rgba(255, 216, 64, 0.94);
 }
 
 .home-product-item__sale-off-label{
-
+    color: red;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    top: 6px;
+    position: relative;
 }
 
-/* 9p:30 */
+.home-product-item__sale-off-percent{
+    font-weight: 700;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    top: 6px;
+    padding-bottom: 5px;
+}
