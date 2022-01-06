@@ -1634,8 +1634,12 @@ i.home-product-item__like-icon-fill{
 }
 
 .home-product-item__place{
-    margin: 10px 4px 10px 66px;
+    /* margin: 10px 4px 10px 66px; */
     padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 6px 7px 10px 4px;
+    align-items: center;
     color: var(--black-color);
 }
 
