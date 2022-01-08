@@ -80,3 +80,46 @@
     padding-right: 12px;
     width: 83.3334%;
  }
+ 
+/* Patination */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 0 8px;
+}
+
+.pagination-item span{
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+.patination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+}
+
+.pagination-item__link{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.55rem;
+    color: var(--black-color);
+    min-width: 40px;
+    --height: 30px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.pagination-item-icon{
+    font-size: 1.4rem;
+}
