@@ -1739,6 +1739,80 @@ i.home-product-item__like-icon-fill{
 
 /* Pagination */
 
+/* Phan con lai o file base */
+
 .home-product__pagination{
     margin: 48px 0 36px 0;
 }
+
+/* Footer */
+.footer{
+    border-top: 3px solid var(--primary-color);
+    padding-top: 20px;
+}
+
+.footer__heading{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer__list{
+    padding-left: 0;
+    list-style: none;  
+}
+
+.footer__item{
+    padding-bottom: 10px;
+}
+
+.footer-item-link{
+    text-decoration: none;
+    color: #918f8f;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+
+.footer-item-link:hover{
+    color: var(--text-primary-color);
+}
+
+.footer__item-icon-facebook{
+    font-size: 1.4rem;
+    padding-right: 6px;
+    color: #3542b8;
+}
+
+.footer__item-icon-instagram{
+    font-size: 1.4rem;
+    padding-right: 6px;
+    color: #e24366;
+}
+
+.footer__item-icon-linkedin{
+    font-size: 1.4rem;
+    padding-right: 6px;
+    color: #3542b8;
+}
+
+.footer__download-qr{
+    width: 30%;
+    height: 30%;
+
+}
+
+.footer__download-apps-img{
+
+}
+
+.footer__copyright{
+
+}
+
+.footer__address{
+
+}
+
+/* 9p */
+
