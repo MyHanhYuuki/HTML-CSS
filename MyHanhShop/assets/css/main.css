@@ -1796,23 +1796,50 @@ i.home-product-item__like-icon-fill{
     color: #3542b8;
 }
 
+.footer__download{
+    display: flex;
+}
+
 .footer__download-qr{
-    width: 30%;
-    height: 30%;
+    height: 60px;
+
+}
+
+.footer__download-apps{
+   flex: 1;
+   margin-left: 20px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+}
+
+.footer__download-app-link{
+    color: transparent;
+    text-decoration: none;
 
 }
 
 .footer__download-apps-img{
+    height: 16px;
 
+}
+
+.footer-bottom{
+    background-color: #fde6ed;
+    text-align: center;
+    margin: 6px -22px 0;
+    padding: 4px 0;
 }
 
 .footer__copyright{
-
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #818181;
 }
 
 .footer__address{
-
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #818181;
 }
-
-/* 9p */
-
